@@ -1,0 +1,20 @@
+[flake8]
+max-line-length = 120
+exclude =
+    .git,
+    __pycache__,
+    venv,
+    env
+ignore =
+    E203,  # Whitespace before ':'
+    W503,  # Line break before binary operator
+    E501   # Line too long (will be handled by max-line-length)
+select =
+    E,
+    W,
+    F
+builtins =
+    print,
+    len
+max-complexity = 6
+docstring-convention = google
